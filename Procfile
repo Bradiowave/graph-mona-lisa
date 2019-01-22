@@ -1,1 +1,1 @@
-web: python graph_demo.py
+web: bokeh serve --port=$PORT --num-procs=0 --host=graph-mona-lisa.herokuapp.com --address=0.0.0.0 --use-xheaders graph_demo.py
