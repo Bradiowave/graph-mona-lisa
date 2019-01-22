@@ -1,1 +1,1 @@
-woker: python graph_demo.py
+worker: python graph_demo.py
