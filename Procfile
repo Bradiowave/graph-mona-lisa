@@ -1,1 +1,1 @@
-worker: python graph_demo.py
+web: python graph_demo.py
