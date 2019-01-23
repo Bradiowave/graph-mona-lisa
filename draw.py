@@ -9,6 +9,9 @@ from bokeh.plotting import figure
 from bokeh.models import (GraphRenderer, StaticLayoutProvider, Circle, LabelSet,
                           ColumnDataSource)
 
+from bokeh.resources import CDN
+from bokeh.embed import file_html
+
 
 class BokehGraph:
     """Class that takes a graph and exposes drawing methods."""
@@ -94,6 +97,7 @@ class BokehGraph:
     def show(self, output_path='./graph.html'):
         """Render the graph to a file on disk and open with default browser."""
         output_file(output_path)
+        file_html(self.plot, CDN, "my plot")
         show(self.plot)
 
     def randomize(self):
